@@ -1,0 +1,17 @@
+{
+  "plugins": ["review"],
+  "filters": {},
+  "rules": {
+    "preset-japanese": false
+    , "preset-ja-technical-writing": true
+    , "textlint-rule-spellcheck-tech-word": true
+    , "preset-jtf-style": false
+    , "preset-ja-spacing": false
+    , "preset-ja-engineering-paper": false
+    , "prh": {
+      "rulePaths" :["./prh-rules/media/WEB+DB_PRESS.yml"
+                    ,"./prh-rules/media/techbooster.yml"
+                   ]
+    }
+  }
+}

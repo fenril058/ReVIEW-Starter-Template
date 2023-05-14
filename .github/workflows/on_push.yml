@@ -1,0 +1,23 @@
+name: Build Re:VIEW Starter to make distribution file
+# The workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    name:
+    runs-on: ubuntu-latest
+    container: docker://kauplan/review2.5
+    steps:
+    # uses v3 Stable version
+    # https://github.com/actions/checkout
+    - name: checkout source
+      uses: actions/checkout@v3
+    # Build Artifacts
+    - name: Build distribution file
+      run: rake pdf
+    # Upload Distribution file
+    - name: Upload distribution file to github artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: Output documents
+        path: ./*.pdf

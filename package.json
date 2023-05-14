@@ -1,0 +1,27 @@
+{
+  "name": "review-starter-template",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fenril058/ReVIEW-Starter-Template.git"
+  },
+  "author": "ril",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "devDependencies": {
+    "prh": "^5.4.4",
+    "prh-languageserver": "^0.4.0",
+    "textlint": "^13.3.1",
+    "textlint-plugin-review": "^0.4.1",
+    "textlint-rule-no-todo": "^2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
+    "textlint-rule-preset-japanese": "^7.0.0",
+    "textlint-rule-preset-jtf-style": "^2.3.13",
+    "textlint-rule-prh": "^5.3.0",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
+  }
+}
